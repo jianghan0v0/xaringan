@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Remote Data</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Han Jiang" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Remote Data
+]
+.subtitle[
+## ⚔<br/>with xaringan
+]
+.author[
+### Han Jiang
+]
+.institute[
+### RStudio, PBC
+]
+.date[
+### 2024/16/1 (updated: 2024-03-12)
+]
+
+---
+
+
+
+class: inverse,left, middle
+
+## Xaringan
+
+Xaringan is an R-based presentation package that leverages Remark.js to create attractive, HTML5-based slides. The package was developed by Yihui Xie, and its name is derived from the Japanese word for "shimmering" (pronounced like "summer lang"), symbolizing the creation of a presentation that is both bright and engaging. Xaringan enables users to generate presentations directly from R Markdown files, which is especially useful for data scientists and statisticians who often need to include dynamically generated statistical charts and R code results in their presentations.
+
+---
+class: middle, center
+
+### Purpose
+Xaringan is primarily used to create presentations, especially for scenarios where R code, graphics, and data analysis results need to be embedded in slides. This makes it ideal for academic conferences, teaching, workshops, and any occasion where data analysis needs to be presented. This slides is all made by Xaringan.
+
+<iframe style="margin: 0 auto; display: block;" width="560" height="315" src="https://www.youtube.com/embed/RPFh3y9UAX4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="TRUE"></iframe>
+
+---
+class: left
+.center[
+#Reflection
+]
+As a data analytics student, I've tried a variety of tools to create presentations, but often the problem is how to effectively combine text, code, and dynamically generated graphs. However, after learning Xaringan in RS class, I can see a brand new way of slides making.
+
+By using Xaringan, I was able to generate presentations directly from my R Markdown files, which not only saved me a lot of time, but also kept the presentation data real-time and accurate. In addition, the customization options offered by Xaringan allowed me to create slides that were both professional and attractive, whether it was font selection, layout design, or animation effects that met my needs.
+
+What impressed me most was that by embedding R code and real-time results, I was able to demonstrate the process of data analysis in a presentation, which is crucial for communicating complex concepts and results. Xaringan not only increased my productivity, but also allowed me to communicate with my audience in a more dynamic and interactive way.
+
+All in all, Xaringan is a powerful and flexible tool. Although I still have a shallow grasp of it, I believe that I can expand more application areas of Xaringan after further exploration of Rstudio in the future.
+---
+#Active and Passive Remote Sensing
+Remote sensing acquires information about objects without direct contact, contrasting on-site observation, and is used across various disciplines and applications. It includes active and passive types, with differences impacting functionality. The Sun, as the primary natural light source for Earth, emits energy that, instead of being absorbed, is reflected by objects like the Moon, which shines without its own light source.
+&lt;div style="text-align: center;"&gt;
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=vzfGMMEEz5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+[Geospatial World](https://www.youtube.com/@geospatialmedia)
+
+---
+#Common Senors Introduction-1
+.pull-left[ 
+**Optical sensor (passive remote sensing)**
+
+Application: Optical sensors capture the reflected light of sunlight on the earth's surface, and are widely used in vegetation cover monitoring, urban planning, agricultural assessment, and environmental change monitoring and other fields.
+
+MODIS (Moderate Resolution Imaging Spectroradiometer), installed on NASA's Terra and Aqua satellites, provides observations of the global climate system, including changes in the oceans, land, and atmosphere.
+]
+.pull-right[  
+**Radar sensor (active remote sensing)**
+
+Application: Radar sensors emit electromagnetic waves and receive the reflected signals, suitable for all-weather and all-day surface monitoring. These sensors are particularly useful for terrain mapping, soil moisture monitoring, ice sheet monitoring, and forest cover assessment.
+
+Example: SAR (Synthetic Aperture Radar) can penetrate clouds and rain and fog to provide high-resolution images of the Earth's surface. Sentinel-1 uses SAR technology to support Earth environmental monitoring and disaster prevention efforts.
+]
+---
+#Common Senors Introduction-2
+.pull-left[  
+**Thermal infrared sensor (passive remote sensing)**
+Applications: Thermal infrared sensors measure the thermal radiation emitted by the surface for monitoring surface temperature, fire detection, thermal pollution, and agricultural water stress analysis.
+
+Example: Thermal infrared sensors from Landsat satellites provide important data on surface temperatures, helping scientists study environmental change and land use.
+]
+
+.pull-right[
+**LiDAR (Active Remote sensing)**
+Application: LiDAR gets three-dimensional information about the surface by firing laser pulses and measuring the time it takes for them to bounce back. It is widely used in high-precision terrain mapping, forestry management, urban modeling, and coastline monitoring.
+
+Example: Aerial LiDAR surveying technology is used to create high-resolution digital ground models (DEM), which are essential for flood simulation and land planning.
+]
+---
+
+
+class: left
+.center[
+# IKONOS-2
+![Figure](https://github.com/jianghan0v0/Learning-diary-han-jiang/raw/main/images/ikonons-1.jpeg)
+
+]
+
+Here we mainly introduce the IKONOS-2.
+The IKONOS-2 satellite belongs to an example of the optical sensor category, which is the application of passive remote sensing technology. IKONOS-2, commonly referred to simply as IKONOS, is a commercial Earth observation satellite owned by Space Imaging (later acquired by GeoEye, which in turn was acquired by DigitalGlobe). Eventually DigitalGlobe became part of Maxar Technologies) launched in 1999. IKONOS-2 was the first commercial satellite capable of providing high-resolution satellite imagery, and its success ushered in a new era in the field of commercial satellite remote sensing. IKONOS-2 is capable of delivering black and white images up to 0.82 m resolution and colour images up to 3.2 m resolution.
+
+---
+## Imagery example
+.pull-left[
+The aftermath of a tsunami in Banda Aceh, Indonesia, June 2013 (DigitalGlobe)
+![Figure2](https://github.com/jianghan0v0/Learning-diary-han-jiang/raw/main/images/indonesia.jpeg)
+]
+.pull-right[
+Nisyros Island, a volcanic island in Greece, April 2000 (DigitalGlobe, National and Kapodistrian University of Athens)
+![Figure3](https://github.com/jianghan0v0/Learning-diary-han-jiang/raw/main/images/ikonos3.jpg)
+]
+---
+class: left
+.center[
+#Application
+]
+
+* Urban Planning and Management: IKONOS-2's high-resolution images are widely used in urban planning and management to help planners analyze the layout of cities, assess the impact of urban expansion, and monitor the development of infrastructure. 
+* Environmental monitoring: IKONOS-2 provides important data support for environmental protection and management by monitoring the effects of changes in forest cover, pollution of water bodies and natural disasters such as floods and fires.
+* Agriculture: IKONOS-2 imagery is used by the agricultural sector to monitor crop growth, assess crop health and conduct land use planning, which helps to improve the efficiency and sustainability of agricultural production.
+* Defense and security: IKONOS-2 imagery is also used in defense and security areas, including border surveillance, mapping of military installations, and damage assessment during wartime. [Maxar Technologies](https://www.maxar.com)
+
+---
+#Reflection 2
+&lt;style type="text/css"&gt;
+body {
+  font-size: 16px;
+}
+
+&lt;/style&gt;
+
+I am deeply interested in the capabilities of the IKONOS-2 satellite and its applications in various fields. As a novice in remote sensing, but with an interest in the direction of GIS, I learned that the high-resolution images provided by IKONOS-2 are essential for in-depth understanding of surface features and fine-grained spatial analysis. Especially in environmental monitoring, IKONOS-2 images can reveal subtle environmental changes, which is of great significance for timely detection and response to ecological problems.
+
+By learning more about IKONOS-2, I became more aware of the potential of high-resolution satellite data to solve real-world problems. Whether in urban planning, agricultural optimization or natural disaster assessment, IKONOS-2 provides powerful support to help decision-makers make more informed decisions. I am also inspired to explore how these valuable data resources can be used to promote sustainable development and improve human well-being.
+
+In summary, IKONOS-2 is not only a major technological advance, it also opens up the wide application of commercial remote sensing data on a global scale. I look forward to learning more data like IKONOS-2 in the future and contributing my share to solving environmental, social and economic problems.
+
+
+---
+# References
+Xie, Yihui. (2018). R Markdown: The Definitive Guide. Chapman and Hall/CRC. 
+
+Xie, Yihui. Xaringan: An R package for creating slideshows with remark.js using R Markdown. GitHub repository. 
+
+"IKONOS." Maxar Technologies. Maxar's Official Website
+
+Jensen, J.R. (2007). Remote Sensing of the Environment: An Earth Resource Perspective. Pearson Prentice Hall.
+
+Lu, D., &amp; Weng, Q. (2007). "A survey of image classification methods and techniques for improving classification performance." International Journal of Remote Sensing, 28(5), 823-870.
+
+Lillesand, T.M., Kiefer, R.W., &amp; Chipman, J.W. (2014). Remote Sensing and Image Interpretation. Wiley. 
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": null,
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
