@@ -1,5 +1,5 @@
 ---
-title: "Remote Data"
+title: "Remote Sensing Senors"
 subtitle: "⚔<br/>with xaringan"
 author: "Han Jiang"
 institute: "RStudio, PBC"
@@ -11,8 +11,11 @@ output:
       highlightStyle:  # how the code displays
       highlightLines: true 
       countIncrementalSlides: false
+      css: xaringan-themer.css
+      
       #ratio "16:9" # or 4:3
 ---
+
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 #remotes::install_github("yihui/xaringan")
@@ -52,10 +55,11 @@ What impressed me most was that by embedding R code and real-time results, I was
 
 All in all, Xaringan is a powerful and flexible tool. Although I still have a shallow grasp of it, I believe that I can expand more application areas of Xaringan after further exploration of Rstudio in the future.
 ---
+
 #Active and Passive Remote Sensing
 Remote sensing acquires information about objects without direct contact, contrasting on-site observation, and is used across various disciplines and applications. It includes active and passive types, with differences impacting functionality. The Sun, as the primary natural light source for Earth, emits energy that, instead of being absorbed, is reflected by objects like the Moon, which shines without its own light source.
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=vzfGMMEEz5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/vzfGMMEEz5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 [Geospatial World](https://www.youtube.com/@geospatialmedia)
 
