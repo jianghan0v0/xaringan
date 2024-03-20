@@ -130,6 +130,8 @@ Source: `r Citet(myBib, "remote2007")`
 Application: Optical sensors capture the reflected light of sunlight on the earth's surface, and are widely used in vegetation cover monitoring, urban planning, agricultural assessment, and environmental change monitoring and other fields.
 
 MODIS (Moderate Resolution Imaging Spectroradiometer), installed on NASA's Terra and Aqua satellites, provides observations of the global climate system, including changes in the oceans, land, and atmosphere.
+
+Source: `r Citet(myBib, "doi10")`
 ]
 .pull-right[  
 **Radar sensor (active remote sensing)**
@@ -137,7 +139,10 @@ MODIS (Moderate Resolution Imaging Spectroradiometer), installed on NASA's Terra
 Application: Radar sensors emit electromagnetic waves and receive the reflected signals, suitable for all-weather and all-day surface monitoring. These sensors are particularly useful for terrain mapping, soil moisture monitoring, ice sheet monitoring, and forest cover assessment.
 
 Example: SAR (Synthetic Aperture Radar) can penetrate clouds and rain and fog to provide high-resolution images of the Earth's surface. Sentinel-1 uses SAR technology to support Earth environmental monitoring and disaster prevention efforts.
+
+Source: `r Citet(myBib, "inbook")`
 ]
+
 ---
 #Common Senors Introduction-2
 .pull-left[  
@@ -145,6 +150,7 @@ Example: SAR (Synthetic Aperture Radar) can penetrate clouds and rain and fog to
 Applications: Thermal infrared sensors measure the thermal radiation emitted by the surface for monitoring surface temperature, fire detection, thermal pollution, and agricultural water stress analysis.
 
 Example: Thermal infrared sensors from Landsat satellites provide important data on surface temperatures, helping scientists study environmental change and land use.
+Source: `r Citet(myBib, "lambCombinationActiveOptical2014")`
 ]
 
 .pull-right[
@@ -152,8 +158,9 @@ Example: Thermal infrared sensors from Landsat satellites provide important data
 Application: LiDAR gets three-dimensional information about the surface by firing laser pulses and measuring the time it takes for them to bounce back. It is widely used in high-precision terrain mapping, forestry management, urban modeling, and coastline monitoring.
 
 Example: Aerial LiDAR surveying technology is used to create high-resolution digital ground models (DEM), which are essential for flood simulation and land planning.
+
+Source: `r Citet(myBib, "BHARDWAJ2016125")`
 ]
-Source: `r Citet(myBib, "Lu2007")`
 ---
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
@@ -215,11 +222,6 @@ PrintBibliography(myBib
                   )
 ```
 
----
-# References
-
-
-Lillesand, T.M., Kiefer, R.W., & Chipman, J.W. (2014). Remote Sensing and Image Interpretation. Wiley. 
 
 ---
 class: inverse, center, middle
